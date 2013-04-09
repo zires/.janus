@@ -4,3 +4,9 @@
 [submodule "surround"]
 	path = surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim-matchit"]
+	path = vim-matchit
+	url = git://github.com/edsono/vim-matchit.git
+[submodule "ruby-matchit"]
+	path = ruby-matchit
+	url = git://github.com/vim-scripts/ruby-matchit.git
