@@ -1,0 +1,3 @@
+[submodule "MatchTagAlways"]
+	path = MatchTagAlways
+	url = git://github.com/Valloric/MatchTagAlways.git
