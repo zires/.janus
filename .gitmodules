@@ -1,3 +1,6 @@
 [submodule "MatchTagAlways"]
 	path = MatchTagAlways
 	url = git://github.com/Valloric/MatchTagAlways.git
+[submodule "surround"]
+	path = surround
+	url = https://github.com/tpope/vim-surround
