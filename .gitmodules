@@ -10,3 +10,6 @@
 [submodule "ruby-matchit"]
 	path = ruby-matchit
 	url = git://github.com/vim-scripts/ruby-matchit.git
+[submodule "YankRing.vim"]
+	path = YankRing.vim
+	url = git://github.com/vim-scripts/YankRing.vim.git
