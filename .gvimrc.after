@@ -2,7 +2,7 @@ set guifont=Monaco:h14
 
 color railscasts2
 
-nmap <F8> :TagbarToggle<CR>
+nmap <F6> :TagbarToggle<CR>
 
 " ctrl + s save current file
 imap <C-s> <Esc>:w<CR>:echo expand("%f") . " saved."<CR>
