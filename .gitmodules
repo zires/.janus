@@ -16,3 +16,9 @@
 [submodule "tabular"]
 	path = tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim-textobj-rubyblock"]
+	path = vim-textobj-rubyblock
+	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "vim-textobj-user"]
+	path = vim-textobj-user
+	url = git://github.com/kana/vim-textobj-user.git
