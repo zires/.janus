@@ -28,3 +28,6 @@
 [submodule "vim-scratch"]
 	path = vim-scratch
 	url = git://github.com/kana/vim-scratch.git
+[submodule "signature"]
+	path = signature
+	url = git://github.com/kshenoy/vim-signature.git
