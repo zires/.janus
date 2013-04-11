@@ -7,3 +7,9 @@
 [submodule "YankRing.vim"]
 	path = YankRing.vim
 	url = git://github.com/vim-scripts/YankRing.vim.git
+[submodule "align"]
+	path = align
+	url = git://github.com/tsaleh/vim-align.git
+[submodule "vim-coffee-script"]
+	path = vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
