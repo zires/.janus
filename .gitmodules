@@ -22,3 +22,9 @@
 [submodule "vim-textobj-user"]
 	path = vim-textobj-user
 	url = git://github.com/kana/vim-textobj-user.git
+[submodule "vim-ruby-runner"]
+	path = vim-ruby-runner
+	url = git://github.com/henrik/vim-ruby-runner.git
+[submodule "vim-scratch"]
+	path = vim-scratch
+	url = git://github.com/kana/vim-scratch.git

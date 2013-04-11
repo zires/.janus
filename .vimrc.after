@@ -23,3 +23,17 @@ if exists(":Tabularize")
   nmap <Leader>a> :Tabularize /=><CR>
   vmap <Leader>a> :Tabularize /=><CR>
 endif
+
+
+
+"--------------------------------------------------------
+"" plugin vim-ruby-runner
+" "--------------------------------------------------------
+command! FR set filetype=ruby
+
+
+"--------------------------------------------------------
+"" plugin vim-scratch
+" "--------------------------------------------------------
+autocmd User PluginScratchInitializeBefore set filetype=ruby
+
