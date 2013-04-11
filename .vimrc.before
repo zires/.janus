@@ -19,14 +19,3 @@ au WinEnter * set cursorline
 au WinLeave * set nocursorcolumn
 au WinEnter * set cursorcolumn
 endif
-
-
-"--------------------------------------------------------
-"" plugin MatchTagAlways
-" "--------------------------------------------------------
-let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'eruby' : 1,
-    \}

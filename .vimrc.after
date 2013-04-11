@@ -1,2 +1,25 @@
 set guifont=Monaco:h14
 color railscasts2
+
+"--------------------------------------------------------
+"" plugin MatchTagAlways
+" "--------------------------------------------------------
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'eruby' : 1,
+    \}
+
+
+"--------------------------------------------------------
+"" plugin Tabular.vim mappings
+" "--------------------------------------------------------
+if exists(":Tabularize")
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+  nmap <Leader>a> :Tabularize /=><CR>
+  vmap <Leader>a> :Tabularize /=><CR>
+endif
