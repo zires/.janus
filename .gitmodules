@@ -31,3 +31,6 @@
 [submodule "signature"]
 	path = signature
 	url = git://github.com/kshenoy/vim-signature.git
+[submodule "dash.vim"]
+	path = dash.vim
+	url = git://github.com/rizzatti/dash.vim.git
