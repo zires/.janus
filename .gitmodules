@@ -34,3 +34,6 @@
 [submodule "dash.vim"]
 	path = dash.vim
 	url = git://github.com/rizzatti/dash.vim.git
+[submodule "funcoo.vim"]
+	path = funcoo.vim
+	url = git://github.com/rizzatti/funcoo.vim.git
