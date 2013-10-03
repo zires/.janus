@@ -37,3 +37,9 @@
 [submodule "funcoo.vim"]
 	path = funcoo.vim
 	url = git://github.com/rizzatti/funcoo.vim.git
+[submodule "emmet-vim"]
+	path = emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "vim-multiple-cursors"]
+	path = vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
