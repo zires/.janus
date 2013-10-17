@@ -43,3 +43,6 @@
 [submodule "vim-multiple-cursors"]
 	path = vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "vim-sneak"]
+	path = vim-sneak
+	url = https://github.com/justinmk/vim-sneak.git
