@@ -46,3 +46,6 @@
 [submodule "vim-sneak"]
 	path = vim-sneak
 	url = https://github.com/justinmk/vim-sneak.git
+[submodule "vim-airline"]
+	path = vim-airline
+	url = https://github.com/bling/vim-airline.git
