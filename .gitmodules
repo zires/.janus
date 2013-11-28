@@ -10,9 +10,6 @@
 [submodule "align"]
 	path = align
 	url = git://github.com/tsaleh/vim-align.git
-[submodule "vim-coffee-script"]
-	path = vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "tabular"]
 	path = tabular
 	url = git://github.com/godlygeek/tabular.git
