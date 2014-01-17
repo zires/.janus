@@ -19,3 +19,30 @@ au WinEnter * set cursorline
 au WinLeave * set nocursorcolumn
 au WinEnter * set cursorcolumn
 endif
+
+
+"--------------------------------------------------------
+"" Default setting
+"
+" "--------------------------------------------------------
+
+" H: Go to beginning of line. Repeated invocation goes to previous line
+" " noremap <expr> H getpos('.')[2] == 1 ? 'k' : '^'
+" " H: Go to beginning of line.
+noremap H ^
+
+" L: Go to end of line. Repeated invocation goes to next line
+" " noremap <expr> L <SID>end_of_line()
+" " function! s:end_of_line()
+"   " let l = len(getline('.'))
+"     " if (l == 0 || l == getpos('.')[2]-1)
+"         " return 'jg_'
+"           " else
+"               " return 'g_'
+"               " endfunction
+noremap L g_
+
+" qq start recording to register qq
+nnoremap <Space> @q
+
+

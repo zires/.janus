@@ -64,3 +64,17 @@ let g:dash_map = {
 :nmap <silent> <leader>B :CtrlPBuffer<CR>
 :nmap <silent> <leader>m :CtrlPMRU<CR>
 
+
+
+"--------------------------------------------------------
+"" plugin airline
+" "--------------------------------------------------------
+let g:airline#extensions#tabline#enabled = 1
+
+
+"--------------------------------------------------------
+"" syntastic airline
+" "--------------------------------------------------------
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
+
