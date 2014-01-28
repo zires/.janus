@@ -52,3 +52,6 @@
 [submodule "ag.vim"]
 	path = ag.vim
 	url = https://github.com/rking/ag.vim.git
+[submodule "calendar.vim"]
+	path = calendar.vim
+	url = https://github.com/itchyny/calendar.vim.git

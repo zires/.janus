@@ -1,5 +1,7 @@
-set guifont=Monaco:h14
-color railscasts2
+"set guifont=Monaco:h14
+"color railscasts2
+set guifont=Menlo:h14
+color  Tomorrow-Night-Eighties
 
 "--------------------------------------------------------
 "" plugin MatchTagAlways
@@ -62,7 +64,7 @@ let g:dash_map = {
 "" plugin CtrlP
 " "--------------------------------------------------------
 :nmap <silent> <leader>B :CtrlPBuffer<CR>
-:nmap <silent> <leader>m :CtrlPMRU<CR>
+:nmap <silent> <leader>m :CtrlPMixed<CR>
 
 
 
@@ -73,8 +75,15 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 "--------------------------------------------------------
-"" syntastic airline
+"" syntastic ng
 " "--------------------------------------------------------
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
+
+"--------------------------------------------------------
+"" disable nerdTreeCmd
+" "--------------------------------------------------------
+augroup AuNERDTreeCmd
+  autocmd! FocusGained
+augroup end
 

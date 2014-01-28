@@ -1,6 +1,10 @@
 set guifont=Monaco:h14
 
-color railscasts2
+"color railscasts2
+
+"set guifont=Menlo:h14
+
+color  Tomorrow-Night-Eighties
 
 nmap <F6> :TagbarToggle<CR>
 
