@@ -55,3 +55,6 @@
 [submodule "calendar.vim"]
 	path = calendar.vim
 	url = https://github.com/itchyny/calendar.vim.git
+[submodule "vim-choosewin"]
+	path = vim-choosewin
+	url = https://github.com/t9md/vim-choosewin.git

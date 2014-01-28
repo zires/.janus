@@ -87,3 +87,9 @@ augroup AuNERDTreeCmd
   autocmd! FocusGained
 augroup end
 
+
+
+"--------------------------------------------------------
+"" plugin ChooseWin
+" "--------------------------------------------------------
+:nmap <silent> <leader>cw :ChooseWin<CR>
