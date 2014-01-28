@@ -58,3 +58,6 @@
 [submodule "vim-choosewin"]
 	path = vim-choosewin
 	url = https://github.com/t9md/vim-choosewin.git
+[submodule "ctrlsf.vim"]
+	path = ctrlsf.vim
+	url = https://github.com/dyng/ctrlsf.vim.git
