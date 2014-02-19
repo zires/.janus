@@ -61,3 +61,6 @@
 [submodule "ctrlsf.vim"]
 	path = ctrlsf.vim
 	url = https://github.com/dyng/ctrlsf.vim.git
+[submodule "vim-jade"]
+	path = vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
