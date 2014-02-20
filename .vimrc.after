@@ -1,7 +1,7 @@
 "set guifont=Monaco:h14
-"color railscasts2
+color railscasts2
 set guifont=Menlo:h14
-color  Tomorrow-Night-Eighties
+"color  Tomorrow-Night-Eighties
 
 "--------------------------------------------------------
 "" plugin MatchTagAlways
@@ -56,7 +56,7 @@ let g:dash_map = {
 "--------------------------------------------------------
 "" plugin yankring
 " "--------------------------------------------------------
-:nmap <silent> <leader>r :YRShow<CR>
+:nmap <silent> <leader>y :YRShow<CR>
 
 
 

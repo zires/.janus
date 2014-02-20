@@ -45,4 +45,7 @@ noremap L g_
 " qq start recording to register qq
 nnoremap <Space> @q
 
+" Use kj to Esc
+inoremap kj <Esc>
 
+map Y y$
