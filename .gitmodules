@@ -64,3 +64,6 @@
 [submodule "vim-jade"]
 	path = vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "indentLine"]
+	path = indentLine
+	url = https://github.com/Yggdroot/indentLine.git
