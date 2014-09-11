@@ -86,6 +86,7 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 augroup AuNERDTreeCmd
   autocmd! FocusGained
 augroup end
+map <leader>r :NERDTreeFind<cr>
 
 
 
@@ -116,3 +117,4 @@ else
 
   map <C-f> <S-Down>
 endif
+let g:ctrlsf_auto_close = 0

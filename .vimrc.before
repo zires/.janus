@@ -47,5 +47,8 @@ nnoremap <Space> @q
 
 " Use kj to Esc
 inoremap kj <Esc>
+inoremap kh <Esc>
 
 map Y y$
+
+xnoremap p pgvy
