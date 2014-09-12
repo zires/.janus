@@ -61,6 +61,3 @@
 [submodule "indentLine"]
 	path = indentLine
 	url = https://github.com/Yggdroot/indentLine.git
-[submodule "vim-autoclose"]
-	path = vim-autoclose
-	url = https://github.com/spf13/vim-autoclose.git
