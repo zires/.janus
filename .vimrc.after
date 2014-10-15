@@ -3,6 +3,8 @@ color railscasts2
 set guifont=Menlo:h14
 "color  Tomorrow-Night-Eighties
 
+
+
 "--------------------------------------------------------
 "" plugin MatchTagAlways
 " "--------------------------------------------------------
@@ -12,6 +14,7 @@ let g:mta_filetypes = {
     \ 'xml' : 1,
     \ 'eruby' : 1,
     \}
+
 
 
 "--------------------------------------------------------
@@ -39,8 +42,7 @@ command! FR set filetype=ruby
 "--------------------------------------------------------
 "" plugin vim-scratch
 " "--------------------------------------------------------
-autocmd User PluginScratchInitializeBefore set filetype=ruby
-
+"autocmd User PluginScratchInitializeBefore set filetype=ruby
 
 
 
@@ -53,10 +55,11 @@ let g:dash_map = {
         \ }
 
 
+
 "--------------------------------------------------------
 "" plugin yankring
 " "--------------------------------------------------------
-:nmap <silent> <leader>y :YRShow<CR>
+":nmap <silent> <leader>y :YRShow<CR>
 
 
 
@@ -74,10 +77,11 @@ let g:dash_map = {
 let g:airline#extensions#tabline#enabled = 1
 
 
+
 "--------------------------------------------------------
 "" syntastic ng
 " "--------------------------------------------------------
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+"let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 
 "--------------------------------------------------------
@@ -118,3 +122,24 @@ else
   map <C-f> <S-Down>
 endif
 let g:ctrlsf_auto_close = 0
+
+
+
+"--------------------------------------------------------
+"" plugin  neocomplete
+" "--------------------------------------------------------
+"let g:neocomplete#enable_at_startup = 1
+
+
+
+"--------------------------------------------------------
+"" plugin  ultisnips
+" "--------------------------------------------------------
+"let g:UltiSnipsEditSplit="vertical"
+
+
+
+"--------------------------------------------------------
+"" plugin  vim-autoclose
+" "--------------------------------------------------------
+"let g:autoclose_vim_commentmode = 1

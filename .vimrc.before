@@ -43,7 +43,7 @@ noremap H ^
 noremap L g_
 
 " qq start recording to register qq
-nnoremap <Space> @q
+" nnoremap <Space> @q
 
 " Use kj to Esc
 inoremap kj <Esc>
@@ -52,3 +52,5 @@ inoremap kh <Esc>
 map Y y$
 
 xnoremap p pgvy
+
+call janus#disable_plugin('vim-snippets')

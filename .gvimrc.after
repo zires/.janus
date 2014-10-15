@@ -12,3 +12,4 @@ nmap <F6> :TagbarToggle<CR>
 imap <C-s> <Esc>:w<CR>:echo expand("%f") . " saved."<CR>
 vmap <C-s> <Esc>:w<CR>:echo expand("%f") . " saved."<CR>
 nmap <C-s> <Esc>:w<CR>:echo expand("%f") . " saved."<CR>
+
