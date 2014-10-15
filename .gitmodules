@@ -19,9 +19,6 @@
 [submodule "vim-ruby-runner"]
 	path = vim-ruby-runner
 	url = git://github.com/henrik/vim-ruby-runner.git
-[submodule "vim-scratch"]
-	path = vim-scratch
-	url = git://github.com/kana/vim-scratch.git
 [submodule "signature"]
 	path = signature
 	url = git://github.com/kshenoy/vim-signature.git
@@ -61,3 +58,6 @@
 [submodule "indentLine"]
 	path = indentLine
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "auto-pairs"]
+	path = auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
