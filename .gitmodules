@@ -61,3 +61,6 @@
 [submodule "auto-pairs"]
 	path = auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "closetag.vim"]
+	path = closetag.vim
+	url = https://github.com/docunext/closetag.vim.git
