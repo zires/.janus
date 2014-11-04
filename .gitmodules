@@ -64,3 +64,6 @@
 [submodule "closetag.vim"]
 	path = closetag.vim
 	url = https://github.com/docunext/closetag.vim.git
+[submodule "vim-easy-align"]
+	path = vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git

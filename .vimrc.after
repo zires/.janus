@@ -143,3 +143,17 @@ let g:ctrlsf_auto_close = 0
 "" plugin  vim-autoclose
 " "--------------------------------------------------------
 "let g:autoclose_vim_commentmode = 1
+
+autocmd FileType html,eruby let b:closetag_html_style=1
+autocmd FileType html,eruby source ~/.janus/closetag.vim/plugin/closetag.vim
+
+
+
+"--------------------------------------------------------
+"" plugin  vim-easy-align
+" "--------------------------------------------------------
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+"
+" " Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
+nmap <Leader>a <Plug>(EasyAlign)"
