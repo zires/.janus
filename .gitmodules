@@ -67,3 +67,6 @@
 [submodule "vim-easy-align"]
 	path = vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "seoul256.vim"]
+	path = seoul256.vim
+	url = https://github.com/junegunn/seoul256.vim.git
