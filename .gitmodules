@@ -43,9 +43,6 @@
 [submodule "ag.vim"]
 	path = ag.vim
 	url = https://github.com/rking/ag.vim.git
-[submodule "vim-choosewin"]
-	path = vim-choosewin
-	url = https://github.com/t9md/vim-choosewin.git
 [submodule "ctrlsf.vim"]
 	path = ctrlsf.vim
 	url = https://github.com/dyng/ctrlsf.vim.git
@@ -67,15 +64,9 @@
 [submodule "closetag"]
 	path = closetag
 	url = https://github.com/docunext/closetag.vim.git
-[submodule "incsearch.vim"]
-	path = incsearch.vim
-	url = https://github.com/haya14busa/incsearch.vim.git
 [submodule "splitjoin.vim"]
 	path = splitjoin.vim
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
-[submodule "unite.vim"]
-	path = unite.vim
-	url = https://github.com/Shougo/unite.vim.git
 [submodule "gitv"]
 	path = gitv
 	url = https://github.com/gregsexton/gitv.git
