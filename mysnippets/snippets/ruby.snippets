@@ -83,70 +83,70 @@ snippet until
 	until ${1:condition}
 		${0}
 	end
-snippet cla class .. end
-	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
-		${0}
-	end
-snippet cla class .. initialize .. end
-	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
-		def initialize(${2:args})
-			${0}
-		end
-	end
-snippet cla class .. < ParentClass .. initialize .. end
-	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} < ${2:ParentClass}
-		def initialize(${3:args})
-			${0}
-		end
-	end
-snippet cla ClassName = Struct .. do .. end
-	${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} = Struct.new(:${2:attr_names}) do
-		def ${3:method_name}
-			${0}
-		end
-	end
-snippet cla class BlankSlate .. initialize .. end
-	class ${0:BlankSlate}
-		instance_methods.each { |meth| undef_method(meth) unless meth =~ /\A__/ }
-	end
-snippet cla class << self .. end
-	class << ${1:self}
-		${0}
-	end
-# class .. < DelegateClass .. initialize .. end
-snippet cla-
-	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} < DelegateClass(${2:ParentClass})
-		def initialize(${3:args})
-			super(${4:del_obj})
-
-			${0}
-		end
-	end
-snippet mod module .. end
-	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
-		${0}
-	end
-snippet mod module .. module_function .. end
-	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
-		module_function
-
-		${0}
-	end
-snippet mod module .. ClassMethods .. end
-	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
-		module ClassMethods
-			${0}
-		end
-
-		module InstanceMethods
-
-		end
-
-		def self.included(receiver)
-			receiver.extend         ClassMethods
-			receiver.send :include, InstanceMethods
-		end
-	end
+#snippet cla class .. end
+#	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+#		${0}
+#	end
+#snippet cla class .. initialize .. end
+#	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+#		def initialize(${2:args})
+#			${0}
+#		end
+#	end
+#snippet cla class .. < ParentClass .. initialize .. end
+#	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} < ${2:ParentClass}
+#		def initialize(${3:args})
+#			${0}
+#		end
+#	end
+#snippet cla ClassName = Struct .. do .. end
+#	${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} = Struct.new(:${2:attr_names}) do
+#		def ${3:method_name}
+#			${0}
+#		end
+#	end
+#snippet cla class BlankSlate .. initialize .. end
+#	class ${0:BlankSlate}
+#		instance_methods.each { |meth| undef_method(meth) unless meth =~ /\A__/ }
+#	end
+#snippet cla class << self .. end
+#	class << ${1:self}
+#		${0}
+#	end
+## class .. < DelegateClass .. initialize .. end
+#snippet cla-
+#	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} < DelegateClass(${2:ParentClass})
+#		def initialize(${3:args})
+#			super(${4:del_obj})
+#
+#			${0}
+#		end
+#	end
+#snippet mod module .. end
+#	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+#		${0}
+#	end
+#snippet mod module .. module_function .. end
+#	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+#		module_function
+#
+#		${0}
+#	end
+#snippet mod module .. ClassMethods .. end
+#	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+#		module ClassMethods
+#			${0}
+#		end
+#
+#		module InstanceMethods
+#
+#		end
+#
+#		def self.included(receiver)
+#			receiver.extend         ClassMethods
+#			receiver.send :include, InstanceMethods
+#		end
+#	end
 # attr_reader
 snippet r
 	attr_reader :${0:attr_names}
@@ -381,175 +381,74 @@ snippet rejd
 	reject do |${1:e}|
 		${0}
 	end
+
 snippet sel
 	select { |${1:e}| ${0} }
+
 snippet seld
 	select do |${1:e}|
 		${0}
 	end
+
 snippet lam
 	lambda { |${1:args}| ${0} }
+
 snippet ->
 	-> { ${0} }
 snippet ->a
 	->(${1:args}) { ${0} }
+
 # I'm pretty sure that ruby users expect do to expand to do .. end
 snippet do
 	do
 		${0}
 	end
-# this is for one or more variables. typing a ", " is that cheap that it may
-# not be worth adding another snippet. should 0/1 placeholders change order?
-# its a good idea to think about the var name, so use it first
-snippet dov
-	do |${1:v}|
-		${2}
-	end
+
 snippet :
 	${1:key}: ${2:'value'}
-snippet ope
-	open('${1:path/or/url/or/pipe}', '${2:w}') { |${3:io}| ${0} }
-# path_from_here()
-snippet fpath
-	File.join(File.dirname(__FILE__), *['${1:rel path here}'])
+
 # unix_filter {}
 snippet unif
 	ARGF.each_line${1} do |${2:line}|
 		${0}
 	end
-# option_parse {}
-snippet optp
-	require 'optparse'
 
-	options = { ${0:default: 'args'} }
-
-	ARGV.options do |opts|
-		opts.banner = "Usage: #{File.basename($PROGRAM_NAME)}"
-	end
-snippet opt
-	opts.on('-${1:o}', '--${2:long-option-name}', ${3:String}, '${4:Option description.}') do |${5:opt}|
-		${0}
-	end
-snippet tc
-	require 'test/unit'
-
-	require '${1:library_file_name}'
-
-	class Test${2:$1} < Test::Unit::TestCase
-		def test_${3:case_name}
-			${0}
-		end
-	end
-snippet ts
-	require 'test/unit'
-
-	require 'tc_${1:test_case_file}'
-	require 'tc_${2:test_case_file}'
-snippet as
-	assert ${1:test}, '${2:Failure message.}'
-snippet ase
-	assert_equal ${1:expected}, ${2:actual}
-snippet asne
-	assert_not_equal ${1:unexpected}, ${2:actual}
-snippet asid
-	assert_in_delta ${1:expected_float}, ${2:actual_float}, ${3:2**-20}
-snippet asi
-	assert_includes ${1:collection}, ${2:object}
-snippet asio
-	assert_instance_of ${1:ExpectedClass}, ${2:actual_instance}
-snippet asko
-	assert_kind_of ${1:ExpectedKind}, ${2:actual_instance}
-snippet asn
-	assert_nil ${1:instance}
-snippet asnn
-	assert_not_nil ${1:instance}
-snippet asm
-	assert_match(/${1:expected_pattern}/, ${2:actual_string})
-snippet asnm
-	assert_no_match(/${1:unexpected_pattern}/, ${2:actual_string})
-snippet aso
-	assert_operator ${1:left}, :${2:operator}, ${3:right}
-snippet asr
-	assert_raise ${1:Exception} { ${0} }
-snippet asrd
-	assert_raise ${1:Exception} do
-		${0}
-	end
-snippet asnr
-	assert_nothing_raised ${1:Exception} { ${0} }
-snippet asnrd
-	assert_nothing_raised ${1:Exception} do
-		${0}
-	end
-snippet asrt
-	assert_respond_to ${1:object}, :${2:method}
-snippet ass assert_same(..)
-	assert_same ${1:expected}, ${2:actual}
-snippet ass assert_send(..)
-	assert_send [${1:object}, :${2:message}, ${3:args}]
-snippet asns
-	assert_not_same ${1:unexpected}, ${2:actual}
-snippet ast
-	assert_throws :${1:expected}, -> { ${0} }
-snippet astd
-	assert_throws :${1:expected} do
-		${0}
-	end
-snippet asnt
-	assert_nothing_thrown { ${0} }
-snippet asntd
-	assert_nothing_thrown do
-		${0}
-	end
-snippet fl
-	flunk '${1:Failure message.}'
 # Benchmark.bmbm do .. end
 snippet bm-
 	TESTS = ${1:10_000}
 	Benchmark.bmbm do |results|
 		${0}
 	end
+
 snippet rep
 	results.report('${1:name}:') { TESTS.times { ${0} } }
+
 # Marshal.dump(.., file)
 snippet Md
 	File.open('${1:path/to/file.dump}', 'wb') { |${2:file}| Marshal.dump(${3:obj}, $2) }
+
 # Mashal.load(obj)
 snippet Ml
 	File.open('${1:path/to/file.dump}', 'rb') { |${2:file}| Marshal.load($2) }
+
 # deep_copy(..)
 snippet deec
 	Marshal.load(Marshal.dump(${1:obj_to_copy}))
-snippet Pn-
-	PStore.new('${1:file_name.pstore}')
-snippet tra
-	transaction(${1:true}) { ${0} }
-# xmlread(..)
-snippet xml-
-	REXML::Document.new(File.read('${1:path/to/file}'))
-# xpath(..) { .. }
-snippet xpa
-	elements.each('${1://Xpath}') do |${2:node}|
-		${0}
-	end
-# class_from_name()
-snippet clafn
-	split('::').inject(Object) { |par, const| par.const_get(const) }
+
 # singleton_class()
 snippet sinc
 	class << self; self end
-snippet nam
-	namespace :${1:`vim_snippets#Filename()`} do
-		${0}
-	end
+
 snippet tas
 	desc '${1:Task description}'
 	task ${2:task_name: [:dependent, :tasks]} do
 		${0}
 	end
+
 # block
 snippet b
 	{ |${1:var}| ${0} }
+
 snippet begin
 	begin
 		fail 'A test exception.'
@@ -571,120 +470,6 @@ snippet debug18
 	require 'ruby-debug'; debugger
 snippet pry
 	require 'pry'; binding.pry
+
 snippet strf
 	strftime('${1:%Y-%m-%d %H:%M:%S %z}')${0}
-#
-# Minitest snippets
-#
-snippet mb
-	must_be ${0}
-snippet wb
-	wont_be ${0}
-snippet mbe
-	must_be_empty
-snippet wbe
-	wont_be_empty
-snippet mbio
-	must_be_instance_of ${0:Class}
-snippet wbio
-	wont_be_instance_of ${0:Class}
-snippet mbko
-	must_be_kind_of ${0:Class}
-snippet wbko
-	wont_be_kind_of ${0:Class}
-snippet mbn
-	must_be_nil
-snippet wbn
-	wont_be_nil
-snippet mbsa
-	must_be_same_as ${0:other}
-snippet wbsa
-	wont_be_same_as ${0:other}
-snippet mbsi
-	-> { ${0} }.must_be_silent
-snippet mbwd
-	must_be_within_delta ${1:0.1}, ${2:0.1}
-snippet wbwd
-	wont_be_within_delta ${1:0.1}, ${2:0.1}
-snippet mbwe
-	must_be_within_epsilon ${1:0.1}, ${2:0.1}
-snippet wbwe
-	wont_be_within_epsilon ${1:0.1}, ${2:0.1}
-snippet me
-	must_equal ${0:other}
-snippet we
-	wont_equal ${0:other}
-snippet mi
-	must_include ${0:what}
-snippet wi
-	wont_include ${0:what}
-snippet mm
-	must_match /${0:regex}/
-snippet wm
-	wont_match /${0:regex}/
-snippet mout
-	-> { ${1} }.must_output '${0}'
-snippet mra
-	-> { ${1} }.must_raise ${0:Exception}
-snippet mrt
-	must_respond_to :${0:method}
-snippet wrt
-	wont_respond_to :${0:method}
-snippet msend
-	must_send [ ${1:what}, :${2:method}, ${3:args} ]
-snippet mthrow
-	-> { throw :${1:error} }.must_throw :${2:error}
-##########################
-#     Rspec snippets     #
-##########################
-snippet desc
-	describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
-		${0}
-	end
-snippet descm
-	describe '${1:#method}' do
-		${0:pending 'Not implemented'}
-	end
-snippet cont
-	context '${1:message}' do
-		${0}
-	end
-snippet bef
-	before :${1:each} do
-		${0}
-	end
-snippet aft
-	after :${1:each} do
-		${0}
-	end
-snippet let
-	let(:${1:object}) { ${0} }
-snippet let!
-	let!(:${1:object}) { ${0} }
-snippet subj
-	subject { ${0} }
-snippet s.
-	subject.${0:method}
-snippet spec
-	specify { subject.${0} }
-snippet exp
-	expect(${1:object}).to ${0}
-snippet expb
-	expect { ${1:object} }.to ${0}
-snippet experr
-	expect { ${1:object} }.to raise_error ${2:StandardError}, /${0:message_regex}/
-snippet shared
-	shared_examples ${0:'shared examples name'}
-snippet ibl
-	it_behaves_like ${0:'shared examples name'}
-snippet it
-	it '${1:spec_name}' do
-		${0}
-	end
-snippet its
-	its(:${1:method}) { should ${0} }
-snippet is
-	it { should ${0} }
-snippet isn
-	it { should_not ${0} }
-

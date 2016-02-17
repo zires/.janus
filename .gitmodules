@@ -70,6 +70,18 @@
 [submodule "gitv"]
 	path = gitv
 	url = https://github.com/gregsexton/gitv.git
-[submodule "neomru.vim"]
-	path = neomru.vim
-	url = https://github.com/Shougo/neomru.vim.git
+[submodule "ctrlp-funky"]
+	path = ctrlp-funky
+	url = https://github.com/tacahiroy/ctrlp-funky.git
+[submodule "vim-bundler"]
+	path = vim-bundler
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "vim-eighties"]
+	path = vim-eighties
+	url = https://github.com/justincampbell/vim-eighties.git
+[submodule "vim-yaml"]
+	path = vim-yaml
+	url = https://github.com/stephpy/vim-yaml.git
+[submodule "vim-ctrlspace"]
+	path = vim-ctrlspace
+	url = https://github.com/szw/vim-ctrlspace.git
